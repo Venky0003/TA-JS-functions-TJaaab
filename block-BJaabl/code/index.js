@@ -29,12 +29,13 @@ addTwoNumbers(20, 32); // 32
 addTwoNumbers(10, "100"); // Alert Enter Valid Input
 */
 function addTwoNumbers(firstNum,secondNum){
-  if (firstNum && secondNum === Number){
-    return firstNum + secondNum; 
-  }
-  if (firstNum || secondNum === " "){
+  if (firstNum !=="number"|| secondNum !== "number"){
     alert(`Enter Valid Input`);
   }
+  else (firstNum && secondNum === Number){
+    return firstNum + secondNum; 
+  }
+
 }
 addTwoNumbers(3,3);
 
@@ -50,21 +51,23 @@ calc(20, 10, 'sub'); // 10
 calc(20, 10, 'mul'); // 200
 */
 function calc(numA,numB,operation){
-  if(operation === "add"){
-    return numA + numB;
-  }
-  else if(operation === "sub"){
-    return numA - numB;
-  }
-  else if(operation === "mul"){
-    return numA * numB;
-  }
-  else if(operation === "div"){
-    return numA  / numB;
-  }
-  else if(numA || numB ==" "){
+  if (firstNum !=="number"|| secondNum !== "number"){
     alert(`Enter Valid Input`);
   }
+  else {
+    switch(operation){
+      case "add":
+        return firstNum + secondNum; 
+      case "sub":
+        return firstNum - secondNum; 
+      case "mul":
+        return firstNum * secondNum;   
+      case "div":
+        return firstNum / secondNum;        
+    }
+    
+  }
+
 }
 calc(1,2,div)
 
