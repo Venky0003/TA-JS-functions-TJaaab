@@ -147,14 +147,13 @@ sumOfN(5);
 // Your code goes here
 function sumOfMul(n){
  
-    // let resultSum = 0;
-    //   for (let i = 0 ; i <= n; i++ ){
-    //     resultSum += rem; 
-    //   }
-    //   for(let j = 0; j <= n; j++){
-    //     resultSum += remTwo;
-    //   }
-    //   return resultSum;
+    let resultSum = 0;
+      for (let i = 0 ; i <= n; i++ ){
+        if( i % 5 ===0  || i % 7 === 0){
+          resultSum += i; 
+        }
+      }
+      return resultSum;
   }
   sumOfMul(20)
 /*
